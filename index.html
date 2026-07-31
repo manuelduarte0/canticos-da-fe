@@ -3,280 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cânticos da Fé v618</title> <!-- MUDOU AQUI -->
+    <title>Cânticos da Fé v618.1</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            position: relative;
-        }
-
-        body::before {
-            content: '22';
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50vw;
-            font-weight: 900;
-            color: rgba(0,0,0,0.05);
-            z-index: 0;
-            pointer-events: none;
-            user-select: none;
-        }
-
-.card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            padding: 30px;
-            width: 100%;
-            max-width: 400px;
-            position: relative;
-            z-index: 1;
-        }
-
-.diretoria {
-            text-align: center;
-            font-size: 11px;
-            font-weight: 600;
-            color: #555;
-            margin-bottom: 2px;
-            line-height: 1.3;
-        }
-
-        h1, h2 {
-            text-align: center;
-            margin: 0 0 20px 0;
-        }
-
-        h1 {
-            font-size: 38px; /* diminui um pouco pq "Cânticos da Fé" é maior */
-            font-weight: 900;
-            background: linear-gradient(45deg, #FF4500, #FF8C00, #FFD700, #FF4500, #FF0000);
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 10px rgba(255,69,0,0.5), 0 0 20px rgba(255,140,0,0.3);
-            letter-spacing: 2px;
-            animation: fogo 2s ease infinite;
-        }
-
-        @keyframes fogo {
-            0% { background-position: 0% 50%; filter: drop-shadow(0 0 5px #FF4500); }
-            25% { background-position: 100% 50%; filter: drop-shadow(0 0 15px #FF8C00); }
-            50% { background-position: 50% 100%; filter: drop-shadow(0 0 25px #FFD700); }
-            75% { background-position: 0% 100%; filter: drop-shadow(0 0 15px #FF4500); }
-            100% { background-position: 0% 50%; filter: drop-shadow(0 0 5px #FF0000); }
-        }
-
-.nome-fundador {
-            animation: brilhoDiscreto 3s ease-in-out infinite;
-        }
-
-        @keyframes brilhoDiscreto {
-            0%, 100% { opacity: 0.9; text-shadow: 0 0 3px rgba(0,123,255,0.2); }
-            50% { opacity: 1; text-shadow: 0 0 8px rgba(0,123,255,0.4); }
-        }
-
+        body {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;background: #f5f5f5;margin: 0;padding: 20px;display: flex;justify-content: center;align-items: center;min-height: 100vh;position: relative;}
+        body::before {content: '22';position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 50vw;font-weight: 900;color: rgba(0,0,0,0.05);z-index: 0;pointer-events: none;user-select: none;}
+       .card {background: white;border-radius: 12px;box-shadow: 0 4px 12px rgba(0,0,0,0.1);padding: 30px;width: 100%;max-width: 400px;position: relative;z-index: 1;}
+       .diretoria {text-align: center;font-size: 11px;font-weight: 600;color: #555;margin-bottom: 2px;line-height: 1.3;}
+        h1, h2 {text-align: center;margin: 0 0 20px 0;}
+        h1 {font-size: 38px;font-weight: 900;background: linear-gradient(45deg, #FF4500, #FF8C00, #FFD700, #FF4500, #FF0000);background-size: 300% 300%;-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;text-shadow: 0 0 10px rgba(255,69,0,0.5), 0 0 20px rgba(255,140,0,0.3);letter-spacing: 2px;animation: fogo 2s ease infinite;}
+        @keyframes fogo {0% { background-position: 0% 50%; filter: drop-shadow(0 0 5px #FF4500); }25% { background-position: 100% 50%; filter: drop-shadow(0 0 15px #FF8C00); }50% { background-position: 50% 100%; filter: drop-shadow(0 0 25px #FFD700); }75% { background-position: 0% 100%; filter: drop-shadow(0 0 15px #FF4500); }100% { background-position: 0% 50%; filter: drop-shadow(0 0 5px #FF0000); }}
+       .nome-fundador {animation: brilhoDiscreto 3s ease-in-out infinite;}
+        @keyframes brilhoDiscreto {0%, 100% { opacity: 0.9; text-shadow: 0 0 3px rgba(0,123,255,0.2); }50% { opacity: 1; text-shadow: 0 0 8px rgba(0,123,255,0.4); }}
         h2 { font-size: 22px; color: #333; }
-
-.btn-grande {
-            width: 100%;
-            padding: 16px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 500;
-            color: white;
-            cursor: pointer;
-            margin-bottom: 15px;
-            line-height: 1.3;
-        }
-
-.btn-verde { background: #28a745; }
-.btn-azul { background: #007bff; }
-.btn-cinza { background: #6c757d; padding: 8px 16px; width: auto; }
-.btn-vermelho { background: #dc3545; }
-
+       .btn-grande {width: 100%;padding: 16px;border: none;border-radius: 8px;font-size: 16px;font-weight: 500;color: white;cursor: pointer;margin-bottom: 15px;line-height: 1.3;}
+       .btn-verde { background: #28a745; }.btn-azul { background: #007bff; }.btn-cinza { background: #6c757d; padding: 8px 16px; width: auto; }.btn-vermelho { background: #dc3545; }
         #tela-quiz, #tela-final, #tela-admin, #tela-ranking, #tela-bloqueado { display: none; }
-
-.info-topo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        #tempo { color: #dc3545; font-weight: bold; }
-        #pergunta { font-size: 18px; font-weight: 600; margin: 20px 0; }
-
-.opcao {
-            width: 100%;
-            text-align: left;
-            padding: 12px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: white;
-            cursor: pointer;
-            font-size: 15px;
-        }
-
-.opcao:disabled { cursor: not-allowed; opacity: 0.7; }
-.opcao.correta { background: #d4edda; border-color: #28a745; }
-.opcao.errada { background: #f8d7da; border-color: #dc3545; }
-
-        #feedback { text-align: center; font-weight: bold; color: #28a745; margin: 15px 0; }
-        #referencia { background: #e7f3ff; border-left: 4px solid #007bff; padding: 12px; border-radius: 4px; font-size: 14px; margin: 15px 0; }
-
-.patrocinadores {
-            text-align: center;
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            position: relative;
-        }
-
-.patrocinadores p { font-size: 14px; color: #666; margin-bottom: 10px; }
-
-.patrocinadores img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 8px;
-            background: #fff;
-            padding: 2px;
-            box-shadow: 0 0 0 2px #ddd;
-        }
-
-        input, textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
-
+       .info-topo {display: flex;justify-content: space-between;align-items: center;margin-bottom: 15px;}
+        #tempo { color: #dc3545; font-weight: bold; }#pergunta { font-size: 18px; font-weight: 600; margin: 20px 0; }
+       .opcao {width: 100%;text-align: left;padding: 12px;margin-bottom: 10px;border: 1px solid #ddd;border-radius: 8px;background: white;cursor: pointer;font-size: 15px;}
+       .opcao:disabled { cursor: not-allowed; opacity: 0.7; }.opcao.correta { background: #d4edda; border-color: #28a745; }.opcao.errada { background: #f8d7da; border-color: #dc3545; }
+        #feedback { text-align: center; font-weight: bold; color: #28a745; margin: 15px 0; }#referencia { background: #e7f3ff; border-left: 4px solid #007bff; padding: 12px; border-radius: 4px; font-size: 14px; margin: 15px 0; }
+       .patrocinadores {text-align: center;margin-top: 25px;padding-top: 20px;border-top: 1px solid #eee;position: relative;}
+       .patrocinadores p { font-size: 14px; color: #666; margin-bottom: 10px; }
+       .patrocinadores img {width: 60px;height: 60px;border-radius: 50%;object-fit: cover;margin: 0 8px;background: #fff;padding: 2px;box-shadow: 0 0 0 2px #ddd;}
+        input, textarea, select {width: 100%;padding: 10px;margin-bottom: 10px;border: 1px solid #ddd;border-radius: 8px;font-size: 14px;box-sizing: border-box;}
         label { font-weight: 500; font-size: 14px; display: block; margin-bottom: 5px; }
-
-.lista-perguntas {
-            max-height: 200px;
-            overflow-y: auto;
-            border: 1px solid #eee;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-.item-pergunta {
-            padding: 8px;
-            border-bottom: 1px solid #f0f0f0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-.item-pergunta:last-child { border-bottom: none; }
-
-.fundador {
-            position: absolute;
-            right: 0;
-            bottom: -18px;
-            font-size: 9px;
-            color: #bbb;
-        }
-
-.btn-azul small { font-size: 11px; opacity: 0.9; font-weight: 400; }
-
-.ranking-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-            font-size: 14px;
-        }
-
-.ranking-item:nth-child(1) { background: #fff3cd; font-weight: bold; }
-.ranking-item:nth-child(2) { background: #e2e3e5; }
-.ranking-item:nth-child(3) { background: #f8d7da; }
-
-.aviso { background: #fff3cd; border: 1px solid #ffc107; padding: 10px; border-radius: 8px; font-size: 13px; margin-bottom: 15px; text-align: center; }
-.aviso-erro { background: #f8d7da; border: 1px solid #dc3545; color: #721c24; }
+       .lista-perguntas {max-height: 200px;overflow-y: auto;border: 1px solid #eee;padding: 10px;border-radius: 8px;margin-bottom: 15px;}
+       .item-pergunta {padding: 8px;border-bottom: 1px solid #f0f0f0;display: flex;justify-content: space-between;align-items: center;}
+       .item-pergunta:last-child { border-bottom: none; }
+       .fundador {position: absolute;right: 0;bottom: -18px;font-size: 9px;color: #bbb;}
+       .btn-azul small { font-size: 11px; opacity: 0.9; font-weight: 400; }
+       .ranking-item {display: flex;justify-content: space-between;padding: 10px;border-bottom: 1px solid #eee;font-size: 14px;}
+       .ranking-item:nth-child(1) { background: #fff3cd; font-weight: bold; }.ranking-item:nth-child(2) { background: #e2e3e5; }.ranking-item:nth-child(3) { background: #f8d7da; }
+       .aviso { background: #fff3cd; border: 1px solid #ffc107; padding: 10px; border-radius: 8px; font-size: 13px; margin-bottom: 15px; text-align: center; }.aviso-erro { background: #f8d7da; border: 1px solid #dc3545; color: #721c24; }
     </style>
 </head>
 <body>
     <div class="card">
-
         <div id="tela-inicial">
-            <div class="diretoria">
-                Coordenadora Dina<br> <!-- MUDOU AQUI -->
-                Vice Cristiane <!-- MUDOU AQUI -->
-            </div>
-
-            <h1>Cânticos da Fé</h1> <!-- MUDOU AQUI -->
-
+            <div class="diretoria">Presidente Dina<br>Vice Cristiane</div>
+            <h1>Cânticos da Fé</h1>
             <div class="aviso">⚠️ Você só pode jogar 1 vez!</div>
-
             <input type="text" id="nome-jogador" placeholder="Digite seu nome completo" maxlength="30">
-
             <button class="btn-grande btn-verde" id="btn-comecar">📖 Começar Quiz</button>
-
-            <button class="btn-grande btn-azul" id="btn-admin">
-                Área do Administrador<br>
-                <small class="nome-fundador">MANUEL DUARTE</small>
-            </button>
-
+            <button class="btn-grande btn-azul" id="btn-admin">Área do Administrador<br><small class="nome-fundador">MANUEL DUARTE</small></button>
             <div class="patrocinadores">
                 <p>Patrocinadores:</p>
                 <img src="https://i.postimg.cc/8jr91SgQ/lyrios.jpg" alt="Lyrios">
-                <!-- TIREI DOMATTO AQUI -->
                 <img src="https://i.postimg.cc/zVR6JrYm/sa.jpg" alt="SA">
                 <div class="fundador">fundador Manuel Duarte</div>
             </div>
         </div>
 
         <div id="tela-bloqueado">
-            <div class="diretoria">
-                Presidente Dina<br> <!-- MUDOU AQUI -->
-                Vice Cristiane <!-- MUDOU AQUI -->
-            </div>
-
-            <h1>Cânticos da Fé</h1> <!-- MUDOU AQUI -->
-
+            <div class="diretoria">Presidente Dina<br>Vice Cristiane</div>
+            <h1>Cânticos da Fé</h1>
             <div class="aviso aviso-erro">🚫 Você já jogou! <br>Cada pessoa só pode jogar 1 vez.</div>
-
             <p style="text-align:center; font-size:13px; color:#666;">Aguarde o Administrador zerar o ranking para jogar novamente.</p>
-
-            <button class="btn-grande btn-azul" id="btn-admin-bloqueado">
-                Área do Administrador<br>
-                <small class="nome-fundador">MANUEL DUARTE</small>
-            </button>
-
+            <button class="btn-grande btn-azul" id="btn-admin-bloqueado">Área do Administrador<br><small class="nome-fundador">MANUEL DUARTE</small></button>
             <div class="patrocinadores">
                 <p>Patrocinadores:</p>
                 <img src="https://i.postimg.cc/8jr91SgQ/lyrios.jpg" alt="Lyrios">
-                <!-- TIREI DOMATTO AQUI -->
                 <img src="https://i.postimg.cc/zVR6JrYm/sa.jpg" alt="SA">
                 <div class="fundador">fundador Manuel Duarte</div>
             </div>
         </div>
 
         <div id="tela-quiz">
-            <div class="info-topo">
-                <span id="nome-topo"></span>
-                <span id="tempo">Tempo: 15s</span>
-            </div>
+            <div class="info-topo"><span id="nome-topo"></span><span id="tempo">Tempo: 15s</span></div>
             <div id="pergunta"></div>
             <div id="opcoes"></div>
             <div id="feedback"></div>
@@ -294,20 +88,13 @@
         <div id="tela-admin">
             <h2>Área do Administrador</h2>
             <div class="lista-perguntas" id="lista-perguntas"></div>
-            <label>Pergunta:</label>
-            <input type="text" id="nova-pergunta">
-            <label>Opção A:</label>
-            <input type="text" id="opcao-a">
-            <label>Opção B:</label>
-            <input type="text" id="opcao-b">
-            <label>Opção C:</label>
-            <input type="text" id="opcao-c">
-            <label>Opção D:</label>
-            <input type="text" id="opcao-d">
-            <label>Resposta Correta (0=A, 1=B, 2=C, 3=D):</label>
-            <input type="number" id="resposta-correta" min="0" max="3">
-            <label>Referência Bíblica:</label>
-            <input type="text" id="nova-referencia">
+            <label>Pergunta:</label><input type="text" id="nova-pergunta">
+            <label>Opção A:</label><input type="text" id="opcao-a">
+            <label>Opção B:</label><input type="text" id="opcao-b">
+            <label>Opção C:</label><input type="text" id="opcao-c">
+            <label>Opção D:</label><input type="text" id="opcao-d">
+            <label>Resposta Correta (0=A, 1=B, 2=C, 3=D):</label><input type="number" id="resposta-correta" min="0" max="3">
+            <label>Referência Bíblica:</label><input type="text" id="nova-referencia">
             <button class="btn-grande btn-verde" id="btn-add-pergunta">Adicionar Pergunta</button>
             <button class="btn-grande btn-vermelho" id="btn-reset">Resetar Perguntas</button>
             <button class="btn-grande btn-cinza" id="btn-limpar">Zerar Ranking</button>
@@ -319,250 +106,63 @@
             <div id="lista-ranking"></div>
             <button class="btn-grande btn-cinza" id="btn-voltar-menu">Voltar ao Menu</button>
         </div>
+    </div>
 
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
     import { getFirestore, collection, addDoc, getDocs, query, orderBy, limit, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyBi3v_bjeJuE4TBCFYeXcmRHF4EYZR8BaY",
-      authDomain: "ujadi-quiz.firebaseapp.com",
-      projectId: "ujadi-quiz",
-      storageBucket: "ujadi-quiz.firebasestorage.app",
-      messagingSenderId: "457117013086",
-      appId: "1:457117013086:web:be773f7315519b48bad0cf",
-      measurementId: "G-ZXGZ8Q24JC"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    const SENHA_ADMIN = '4248';
+    const firebaseConfig = {apiKey: "AIzaSyBi3v_bjeJuE4TBCFYeXcmRHF4EYZR8BaY",authDomain: "ujadi-quiz.firebaseapp.com",projectId: "ujadi-quiz",storageBucket: "ujadi-quiz.firebasestorage.app",messagingSenderId: "457117013086",appId: "1:457117013086:web:be773f7315519b48bad0cf",measurementId: "G-ZXGZ8Q24JC"};
+    const app = initializeApp(firebaseConfig);const db = getFirestore(app);const SENHA_ADMIN = '4248';
 
     const perguntasPadrao = [
-        { pergunta: "Como se chamava o pai do profeta Micaías?", opcoes: ["(A) Inlá", "(B) Jinla", "(C) Ido", "(D) Zacarias"], correta: 0, referencia: "1 Reis 22:8 - Ainda há um homem por quem poderíamos consultar ao Senhor: Micaías, filho de Inlá; porém eu o odeio, porque nunca profetiza de mim o bem, mas somente o mal..." },
-        { pergunta: "Buzi era pai de qual profeta?", opcoes: ["(A) Jeremias", "(B) Daniel", "(C) Ezequiel", "(D) Isaías"], correta: 2, referencia: "Ezequiel 1:3 - veio expressamente a palavra do Senhor a Ezequiel, filho de Buzi, o sacerdote, na terra dos caldeus, junto ao rio Quebar; e ali esteve sobre ele a mão do Senhor." }
-        //... pode deixar as outras 13 aqui
+        { pergunta: "Como se chamava o pai do profeta Micaías?", opcoes: ["(A) Inlá", "(B) Jinla", "(C) Ido", "(D) Zacarias"], correta: 0, referencia: "1 Reis 22:8 - Ainda há um homem por quem poderíamos consultar ao Senhor: Micaías, filho de Inlá..." },
+        { pergunta: "Buzi era pai de qual profeta?", opcoes: ["(A) Jeremias", "(B) Daniel", "(C) Ezequiel", "(D) Isaías"], correta: 2, referencia: "Ezequiel 1:3 - veio expressamente a palavra do Senhor a Ezequiel, filho de Buzi..." },
+        { pergunta: "Como se chamava os dois filhos de Samuel?", opcoes: ["(A) Joel e Abias", "(B) Nadabe e Abiú", "(C) Gérson e Eliézer", "(D) Hofni e Finéias"], correta: 0, referencia: "1 Samuel 8:2 - E o nome do seu filho primogênito era Joel, e o nome do segundo, Abias..." },
+        { pergunta: "Quantas pessoas Sansão matou depois de morto?", opcoes: ["(A) Cerca de 1000", "(B) Mais do que matou em vida", "(C) Exatamente 3000", "(D) Nenhuma"], correta: 1, referencia: "Juízes 16:30 - E foram mais os que matou na sua morte do que os que matara na sua vida." },
+        { pergunta: "Qual é o nome da rainha mencionado em Atos?", opcoes: ["(A) Candace", "(B) Candácia", "(C) Candira", "(D) Candece"], correta: 0, referencia: "Atos 8:27 - E eis que um homem etíope, eunuco, mordomo-mor de Candace..." },
+        { pergunta: "Em qual capítulo e versículo Saulo foi chamado de Paulo pela primeira vez?", opcoes: ["(A) Atos 9:1", "(B) Atos 13:9", "(C) Atos 22:7", "(D) Atos 26:14"], correta: 1, referencia: "Atos 13:9 - Então Saulo, que também se chama Paulo..." },
+        { pergunta: "Onde foi o ponto de partida do profeta Jonas?", opcoes: ["(A) Jope", "(B) Gate-Hefer", "(C) Társis", "(D) Nínive"], correta: 0, referencia: "Jonas 1:3 - E Jonas se levantou para fugir... e desceu a Jope..." },
+        { pergunta: "Por qual motivo Paulo se separou de Barnabé?", opcoes: ["(A) Por causa de Silas", "(B) Por causa de Marcos/João Marcos", "(C) Por causa de uma doutrina falsa", "(D) Por causa de onde pregar"], correta: 1, referencia: "Atos 15:37-39 - E tal contenda houve entre eles, que se apartaram..." },
+        { pergunta: "Quantos anos tinha Adão quando gerou Sete?", opcoes: ["(A) 100 anos", "(B) 120 anos", "(C) 125 anos", "(D) 130 anos"], correta: 3, referencia: "Gênesis 5:3 - E viveu Adão cento e trinta anos, e gerou um filho..." },
+        { pergunta: "O que está escrito em 1 Coríntios 15:33?", opcoes: ["(A) Deus é amor", "(B) Tudo posso naquele que me fortalece", "(C) As más conversações corrompem os bons costumes", "(D) Orai sem cessar"], correta: 2, referencia: "1 Coríntios 15:33 - Não vos enganeis: as más conversações corrompem os bons costumes." },
+        { pergunta: "Se Otniel foi o primeiro juiz e Sansão foi o último, quem foi o nono juiz de Israel?", opcoes: ["(A) Tola", "(B) Jair", "(C) Jefté", "(D) Ibsã"], correta: 3, referencia: "Juízes 12:8 - Depois dele julgou a Israel Ibsã, de Belém." },
+        { pergunta: "Qual desses era filho de Saul?", opcoes: ["(A) Jonas", "(B) Mefibosete", "(C) Isbael", "(D) Abiu"], correta: 1, referencia: "2 Samuel 21:8 - Mas o rei tomou... Armoni e Mefibosete, que ela tivera de Saul" },
+        { pergunta: "Quantas vezes Deus falou com José, pai de Jesus em sonhos?", opcoes: ["(A) 2 vezes", "(B) 3 vezes", "(C) 4 vezes", "(D) 5 vezes"], correta: 2, referencia: "Mateus 1:20-21; 2:13; 2:19-20; 2:22" },
+        { pergunta: "Em quantas ocasiões Jesus fez a multiplicação de pães e peixe?", opcoes: ["(A) 1 vez", "(B) 2 vezes", "(C) 3 vezes", "(D) 4 vezes"], correta: 1, referencia: "1ª: Mateus 14:13-21. 2ª: Mateus 15:32-39" },
+        { pergunta: "Em qual posição está o livro de Números?", opcoes: ["(A) 3º", "(B) 4º", "(C) 5º", "(D) 6º"], correta: 1, referencia: "Pentateuco: 1. Gênesis, 2. Êxodo, 3. Levítico, 4. Números, 5. Deuteronômio" }
     ];
 
-    let perguntas = JSON.parse(localStorage.getItem('canticosPerguntas')) || perguntasPadrao; // MUDEI NOME
+    let perguntas = JSON.parse(localStorage.getItem('canticosPerguntas')) || perguntasPadrao;
     let perguntaAtual = 0; let acertos = 0; let tempo = 15; let timer; let nomeJogador = '';
 
-    document.getElementById('btn-comecar').addEventListener('click', iniciarQuiz);
-    document.getElementById('btn-admin').addEventListener('click', abrirAdmin);
-    document.getElementById('btn-admin-bloqueado').addEventListener('click', abrirAdmin);
-    document.getElementById('btn-proxima').addEventListener('click', proximaPergunta);
-    document.getElementById('btn-limpar').addEventListener('click', limparRanking);
-    document.querySelectorAll('#btn-voltar-menu').forEach(btn => btn.addEventListener('click', voltarMenu));
-    document.getElementById('btn-add-pergunta').addEventListener('click', adicionarPergunta);
-    document.getElementById('btn-reset').addEventListener('click', resetarPerguntas);
+    document.getElementById('btn-comecar').addEventListener('click', iniciarQuiz);document.getElementById('btn-admin').addEventListener('click', abrirAdmin);document.getElementById('btn-admin-bloqueado').addEventListener('click', abrirAdmin);document.getElementById('btn-proxima').addEventListener('click', proximaPergunta);document.getElementById('btn-limpar').addEventListener('click', limparRanking);document.querySelectorAll('#btn-voltar-menu').forEach(btn => btn.addEventListener('click', voltarMenu));document.getElementById('btn-add-pergunta').addEventListener('click', adicionarPergunta);document.getElementById('btn-reset').addEventListener('click', resetarPerguntas);
 
-    function navegadorJaJogou() {
-        // AGORA VERIFICA NO FIREBASE TAMBEM
-        return localStorage.getItem('canticosJogou_' + nomeJogador) === 'true'; // MUDEI NOME
-    }
+    function alguemJaJogouNesteNavegador() {for(let i = 0; i < localStorage.length; i++) {let chave = localStorage.key(i);if(chave && chave.startsWith('canticosJogou_')) {return true;}}return false;}
 
-    window.onload = async function() {
-        let jogadorAtual = localStorage.getItem('canticosJogadorAtual'); // MUDEI NOME
-        if(jogadorAtual) {
-            nomeJogador = jogadorAtual;
-            perguntaAtual = parseInt(localStorage.getItem('canticosPerguntaAtual')) || 0; // MUDEI NOME
-            acertos = parseInt(localStorage.getItem('canticosAcertos')) || 0; // MUDEI NOME
-            let pulouPergunta = localStorage.getItem('canticosPulou') === 'true'; // MUDEI NOME
-            if(pulouPergunta) { perguntaAtual++; }
-            document.getElementById('nome-topo').textContent = nomeJogador;
-            document.getElementById('tela-inicial').style.display = 'none';
-            document.getElementById('tela-bloqueado').style.display = 'none';
-            document.getElementById('tela-quiz').style.display = 'block';
-            carregarPergunta();
-            return;
-        }
-        if(navegadorJaJogou()) {
-            document.getElementById('tela-inicial').style.display = 'none';
-            document.getElementById('tela-bloqueado').style.display = 'block';
-            return;
-        }
-    }
+    window.onload = async function() {await verificarReset();let jogadorAtual = localStorage.getItem('canticosJogadorAtual');if(jogadorAtual) {nomeJogador = jogadorAtual;perguntaAtual = parseInt(localStorage.getItem('canticosPerguntaAtual')) || 0;acertos = parseInt(localStorage.getItem('canticosAcertos')) || 0;let pulouPergunta = localStorage.getItem('canticosPulou') === 'true';if(pulouPergunta) { perguntaAtual++; }document.getElementById('nome-topo').textContent = nomeJogador;mostrarTela('quiz');carregarPergunta();return;}if(alguemJaJogouNesteNavegador()) {mostrarTela('bloqueado');return;}mostrarTela('inicial');}
 
-    function salvarPerguntas() { localStorage.setItem('canticosPerguntas', JSON.stringify(perguntas)); } // MUDEI NOME
-    async function salvarRankingNoFirebase(nome, acertosTotais) { await addDoc(collection(db, "ranking_canticos"), { nome: nome, acertos: acertosTotais, total: perguntas.length, data: new Date() }); } // MUDEI COLECAO
+    function mostrarTela(tela){document.getElementById('tela-inicial').style.display = 'none';document.getElementById('tela-bloqueado').style.display = 'none';document.getElementById('tela-quiz').style.display = 'none';document.getElementById('tela-final').style.display = 'none';document.getElementById('tela-admin').style.display = 'none';document.getElementById('tela-ranking').style.display = 'none';document.getElementById('tela-' + tela).style.display = 'block';}
+
+    function salvarPerguntas() { localStorage.setItem('canticosPerguntas', JSON.stringify(perguntas)); }
+    async function salvarRankingNoFirebase(nome, acertosTotais) { await addDoc(collection(db, "ranking_canticos"), { nome: nome, acertos: acertosTotais, total: perguntas.length, data: new Date() }); }
     async function carregarRankingDoFirebase() { const q = query(collection(db, "ranking_canticos"), orderBy("acertos", "desc"),limit(50)); const snapshot = await getDocs(q); let listaRanking = []; snapshot.forEach((docSnap) => { listaRanking.push(docSnap.data()); }); return listaRanking; }
+    async function limparRankingFirebase() {const snapshot = await getDocs(collection(db, "ranking_canticos"));snapshot.forEach(async (docSnap) => { await deleteDoc(doc(db, "ranking_canticos", docSnap.id)); });await addDoc(collection(db, "reset_signal"), { data: new Date() });alert("Ranking zerado! Todos foram liberados para jogar novamente.");}
+    async function verificarReset() {const snapshot = await getDocs(collection(db, "reset_signal"));if(snapshot.size > 0){localStorage.clear();snapshot.forEach(async (docSnap) => { await deleteDoc(doc(db, "reset_signal", docSnap.id)); });}}
 
-    async function limparRankingFirebase() {
-        const snapshot = await getDocs(collection(db, "ranking_canticos")); // MUDEI COLECAO
-        snapshot.forEach(async (docSnap) => { await deleteDoc(doc(db, "ranking_canticos", docSnap.id)); });
-
-        // NOVO: Cria um "sinal" no Firebase pra liberar todo mundo
-        await addDoc(collection(db, "reset_signal"), { data: new Date() });
-        alert("Ranking zerado! Todos foram liberados para jogar novamente.");
-    }
-
-    // NOVO: Verifica se teve reset no Firebase
-    async function verificarReset() {
-        const snapshot = await getDocs(collection(db, "reset_signal"));
-        if(snapshot.size > 0){
-            localStorage.clear(); // limpa tudo do navegador
-            // apaga o sinal pra nao ficar limpando toda hora
-            snapshot.forEach(async (docSnap) => { await deleteDoc(doc(db, "reset_signal", docSnap.id)); });
-        }
-    }
-
-    function iniciarQuiz() {
-        nomeJogador = document.getElementById('nome-jogador').value.trim();
-        if(nomeJogador.length < 3) { alert('Digite seu nome completo para começar!'); return; }
-        if(localStorage.getItem('canticosJogou_' + nomeJogador)) { // MUDEI NOME
-            document.getElementById('tela-inicial').style.display = 'none';
-            document.getElementById('tela-bloqueado').style.display = 'block';
-            return;
-        }
-        localStorage.setItem('canticosJogou_' + nomeJogador, 'true'); // MUDEI NOME
-        localStorage.setItem('canticosJogadorAtual', nomeJogador); // MUDEI NOME
-        perguntaAtual = 0; acertos = 0;
-        document.getElementById('nome-topo').textContent = nomeJogador;
-        document.getElementById('tela-inicial').style.display = 'none';
-        document.getElementById('tela-final').style.display = 'none';
-        document.getElementById('tela-admin').style.display = 'none';
-        document.getElementById('tela-quiz').style.display = 'block';
-        carregarPergunta();
-    }
-
-    function voltarMenu() {
-        clearInterval(timer);
-        localStorage.removeItem('canticosJogadorAtual'); // MUDEI NOME
-        localStorage.removeItem('canticosPerguntaAtual'); // MUDEI NOME
-        localStorage.removeItem('canticosAcertos'); // MUDEI NOME
-        localStorage.removeItem('canticosPulou'); // MUDEI NOME
-        document.getElementById('tela-quiz').style.display = 'none';
-        document.getElementById('tela-final').style.display = 'none';
-        document.getElementById('tela-admin').style.display = 'none';
-        document.getElementById('tela-ranking').style.display = 'none';
-        if(navegadorJaJogou()) {
-            document.getElementById('tela-bloqueado').style.display = 'block';
-        } else {
-            document.getElementById('tela-inicial').style.display = 'block';
-        }
-        document.getElementById('nome-jogador').value = '';
-    }
-
-    function abrirAdmin() {
-        const senha = prompt('Digite a senha do administrador:');
-        if (senha === SENHA_ADMIN) {
-            document.getElementById('tela-inicial').style.display = 'none';
-            document.getElementById('tela-bloqueado').style.display = 'none';
-            document.getElementById('tela-admin').style.display = 'block';
-            listarPerguntas();
-            verRanking();
-        } else if (senha!== null) { alert('Senha incorreta!'); }
-    }
-
-    async function verRanking() {
-        await verificarReset(); // VERIFICA SE TEVE RESET
-        document.getElementById('tela-ranking').style.display = 'block';
-        let lista = document.getElementById('lista-ranking');
-        lista.innerHTML = 'Carregando...';
-        const ranking = await carregarRankingDoFirebase();
-        if(ranking.length === 0) { lista.innerHTML = '<p style="text-align:center">Nenhum jogador ainda</p>'; return; }
-        lista.innerHTML = '';
-        ranking.forEach((j, index) => { lista.innerHTML += `<div class="ranking-item"><span>${index+1}. ${j.nome}</span><span>${j.acertos}/${j.total}</span></div>`; });
-    }
-
+    function iniciarQuiz() {nomeJogador = document.getElementById('nome-jogador').value.trim();if(nomeJogador.length < 3) { alert('Digite seu nome completo para começar!'); return; }if(localStorage.getItem('canticosJogou_' + nomeJogador)) {mostrarTela('bloqueado');return;}localStorage.setItem('canticosJogou_' + nomeJogador, 'true');localStorage.setItem('canticosJogadorAtual', nomeJogador);perguntaAtual = 0; acertos = 0;document.getElementById('nome-topo').textContent = nomeJogador;mostrarTela('quiz');carregarPergunta();}
+    function voltarMenu() {clearInterval(timer);localStorage.removeItem('canticosJogadorAtual');localStorage.removeItem('canticosPerguntaAtual');localStorage.removeItem('canticosAcertos');localStorage.removeItem('canticosPulou');if(alguemJaJogouNesteNavegador()) {mostrarTela('bloqueado');} else {mostrarTela('inicial');document.getElementById('nome-jogador').value = '';}}
+    function abrirAdmin() {const senha = prompt('Digite a senha do administrador:');if (senha === SENHA_ADMIN) {mostrarTela('admin');listarPerguntas();verRanking();} else if (senha!== null) { alert('Senha incorreta!'); }}
+    async function verRanking() {await verificarReset();mostrarTela('ranking');let lista = document.getElementById('lista-ranking');lista.innerHTML = 'Carregando...';const ranking = await carregarRankingDoFirebase();if(ranking.length === 0) { lista.innerHTML = '<p style="text-align:center">Nenhum jogador ainda</p>'; return; }lista.innerHTML = '';ranking.forEach((j, index) => { lista.innerHTML += `<div class="ranking-item"><span>${index+1}. ${j.nome}</span><span>${j.acertos}/${j.total}</span></div>`; });}
     async function limparRanking() { if(confirm('Apagar todo o ranking E liberar todos para jogar novamente?')) { await limparRankingFirebase(); voltarMenu(); } }
-
-    function carregarPergunta() {
-        localStorage.setItem('canticosPerguntaAtual', perguntaAtual); // MUDEI NOME
-        localStorage.setItem('canticosAcertos', acertos); // MUDEI NOME
-        localStorage.setItem('canticosPulou', 'true'); // MUDEI NOME
-        if (perguntaAtual >= perguntas.length) { finalizarQuiz(); return; }
-        const p = perguntas[perguntaAtual];
-        document.getElementById('pergunta').textContent = `${perguntaAtual + 1}. ${p.pergunta}`;
-        document.getElementById('acertos').textContent = acertos;
-        document.getElementById('feedback').style.display = 'none';
-        document.getElementById('referencia').style.display = 'none';
-        document.getElementById('btn-proxima').style.display = 'none';
-        const opcoesDiv = document.getElementById('opcoes');
-        opcoesDiv.innerHTML = '';
-        p.opcoes.forEach((opcao, index) => {
-            const btn = document.createElement('button');
-            btn.className = 'opcao';
-            btn.textContent = opcao;
-            btn.onclick = () => verificarResposta(index);
-            opcoesDiv.appendChild(btn);
-        });
-        iniciarTimer();
-    }
-
-    function iniciarTimer() {
-        tempo = 15;
-        document.getElementById('tempo').textContent = `Tempo: ${tempo}s`;
-        clearInterval(timer);
-        timer = setInterval(() => {
-            tempo--;
-            document.getElementById('tempo').textContent = `Tempo: ${tempo}s`;
-            if (tempo <= 0) { clearInterval(timer); mostrarResposta(-1); }
-        }, 1000);
-    }
-
-    function verificarResposta(indiceEscolhido) { clearInterval(timer); localStorage.setItem('canticosPulou', 'false'); mostrarResposta(indiceEscolhido); } // MUDEI NOME
-
-    function mostrarResposta(indiceEscolhido) {
-        const p = perguntas[perguntaAtual];
-        const botoes = document.querySelectorAll('.opcao');
-        botoes.forEach(btn => btn.disabled = true);
-        botoes.forEach((btn, index) => {
-            if (index === p.correta) { btn.classList.add('correta'); }
-            else if (index === indiceEscolhido && indiceEscolhido >= 0) { btn.classList.add('errada'); }
-        });
-        if (indiceEscolhido === p.correta) { acertos++; document.getElementById('acertos').textContent = acertos; document.getElementById('feedback').textContent = 'Acertou! ✅'; document.getElementById('feedback').style.color = '#28a745'; }
-        else if(indiceEscolhido >= 0) { document.getElementById('feedback').textContent = 'Errou! ❌'; document.getElementById('feedback').style.color = '#dc3545'; }
-        else { document.getElementById('feedback').textContent = 'Tempo esgotado! ❌'; document.getElementById('feedback').style.color = '#dc3545'; }
-        document.getElementById('feedback').style.display = 'block';
-        document.getElementById('referencia').textContent = p.referencia;
-        document.getElementById('referencia').style.display = 'block';
-        document.getElementById('btn-proxima').style.display = 'block';
-    }
-
+    function carregarPergunta() {localStorage.setItem('canticosPerguntaAtual', perguntaAtual);localStorage.setItem('canticosAcertos', acertos);localStorage.setItem('canticosPulou', 'true');if (perguntaAtual >= perguntas.length) { finalizarQuiz(); return; }const p = perguntas[perguntaAtual];document.getElementById('pergunta').textContent = `${perguntaAtual + 1}. ${p.pergunta}`;document.getElementById('acertos').textContent = acertos;document.getElementById('feedback').style.display = 'none';document.getElementById('referencia').style.display = 'none';document.getElementById('btn-proxima').style.display = 'none';const opcoesDiv = document.getElementById('opcoes');opcoesDiv.innerHTML = '';p.opcoes.forEach((opcao, index) => {const btn = document.createElement('button');btn.className = 'opcao';btn.textContent = opcao;btn.onclick = () => verificarResposta(index);opcoesDiv.appendChild(btn);});iniciarTimer();}
+    function iniciarTimer() {tempo = 15;document.getElementById('tempo').textContent = `Tempo: ${tempo}s`;clearInterval(timer);timer = setInterval(() => {tempo--;document.getElementById('tempo').textContent = `Tempo: ${tempo}s`;if (tempo <= 0) { clearInterval(timer); mostrarResposta(-1); }}, 1000);}
+    function verificarResposta(indiceEscolhido) { clearInterval(timer); localStorage.setItem('canticosPulou', 'false'); mostrarResposta(indiceEscolhido); }
+    function mostrarResposta(indiceEscolhido) {const p = perguntas[perguntaAtual];const botoes = document.querySelectorAll('.opcao');botoes.forEach(btn => btn.disabled = true);botoes.forEach((btn, index) => {if (index === p.correta) { btn.classList.add('correta'); }else if (index === indiceEscolhido && indiceEscolhido >= 0) { btn.classList.add('errada'); }});if (indiceEscolhido === p.correta) { acertos++; document.getElementById('acertos').textContent = acertos; document.getElementById('feedback').textContent = 'Acertou! ✅'; document.getElementById('feedback').style.color = '#28a745'; }else if(indiceEscolhido >= 0) { document.getElementById('feedback').textContent = 'Errou! ❌'; document.getElementById('feedback').style.color = '#dc3545'; }else { document.getElementById('feedback').textContent = 'Tempo esgotado! ❌'; document.getElementById('feedback').style.color = '#dc3545'; }document.getElementById('feedback').style.display = 'block';document.getElementById('referencia').textContent = p.referencia;document.getElementById('referencia').style.display = 'block';document.getElementById('btn-proxima').style.display = 'block';}
     function proximaPergunta() { perguntaAtual++; carregarPergunta(); }
-
-    async function finalizarQuiz() {
-        await salvarRankingNoFirebase(nomeJogador, acertos);
-        localStorage.removeItem('canticosJogadorAtual'); // MUDEI NOME
-        localStorage.removeItem('canticosPerguntaAtual'); // MUDEI NOME
-        localStorage.removeItem('canticosAcertos'); // MUDEI NOME
-        localStorage.removeItem('canticosPulou'); // MUDEI NOME
-        document.getElementById('tela-quiz').style.display = 'none';
-        document.getElementById('tela-final').style.display = 'block';
-        document.getElementById('nome-final').textContent = nomeJogador;
-        document.getElementById('pontos-final').textContent = `${acertos}/${perguntas.length}`;
-    }
-
-    function adicionarPergunta() {
-        const nova = {
-            pergunta: document.getElementById('nova-pergunta').value,
-            opcoes: [ '(A) ' + document.getElementById('opcao-a').value, '(B) ' + document.getElementById('opcao-b').value, '(C) ' + document.getElementById('opcao-c').value, '(D) ' + document.getElementById('opcao-d').value ],
-            correta: parseInt(document.getElementById('resposta-correta').value),
-            referencia: document.getElementById('nova-referencia').value
-        };
-        if (!nova.pergunta ||!document.getElementById('opcao-a').value) { alert('Preenche pelo menos a pergunta e a opção A!'); return; }
-        perguntas.push(nova); salvarPerguntas(); listarPerguntas();
-        document.getElementById('nova-pergunta').value = '';
-        document.getElementById('opcao-a').value = '';
-        document.getElementById('opcao-b').value = '';
-        document.getElementById('opcao-c').value = '';
-        document.getElementById('opcao-d').value = '';
-        document.getElementById('nova-referencia').value = '';
-        alert('Pergunta adicionada!');
-    }
-
-    function listarPerguntas() {
-        const lista = document.getElementById('lista-perguntas');
-        lista.innerHTML = '';
-        perguntas.forEach((p, index) => {
-            const div = document.createElement('div');
-            div.className = 'item-pergunta';
-            div.innerHTML = `<span>${index + 1}. ${p.pergunta}</span><button class="btn-vermelho" style="padding:4px 8px;font-size:12px;" onclick="removerPergunta(${index})">X</button>`;
-            lista.appendChild(div);
-        });
-    }
-
+    async function finalizarQuiz() {await salvarRankingNoFirebase(nomeJogador, acertos);localStorage.removeItem('canticosJogadorAtual');localStorage.removeItem('canticosPerguntaAtual');localStorage.removeItem('canticosAcertos');localStorage.removeItem('canticosPulou');mostrarTela('final');document.getElementById('nome-final').textContent = nomeJogador;document.getElementById('pontos-final').textContent = `${acertos}/${perguntas.length}`;}
+    function adicionarPergunta() {const nova = {pergunta: document.getElementById('nova-pergunta').value,opcoes: [ '(A) ' + document.getElementById('opcao-a').value, '(B) ' + document.getElementById('opcao-b').value, '(C) ' + document.getElementById('opcao-c').value, '(D) ' + document.getElementById('opcao-d').value ],correta: parseInt(document.getElementById('resposta-correta').value),referencia: document.getElementById('nova-referencia').value};if (!nova.pergunta ||!document.getElementById('opcao-a').value) { alert('Preenche pelo menos a pergunta e a opção A!'); return; }perguntas.push(nova); salvarPerguntas(); listarPerguntas();document.getElementById('nova-pergunta').value = '';document.getElementById('opcao-a').value = '';document.getElementById('opcao-b').value = '';document.getElementById('opcao-c').value = '';document.getElementById('opcao-d').value = '';document.getElementById('nova-referencia').value = '';alert('Pergunta adicionada!');}
+    function listarPerguntas() {const lista = document.getElementById('lista-perguntas');lista.innerHTML = '';perguntas.forEach((p, index) => {const div = document.createElement('div');div.className = 'item-pergunta';div.innerHTML = `<span>${index + 1}. ${p.pergunta}</span><button class="btn-vermelho" style="padding:4px 8px;font-size:12px;" onclick="removerPergunta(${index})">X</button>`;lista.appendChild(div);});}
     window.removerPergunta = function(index) { if (confirm('Apagar essa pergunta?')) { perguntas.splice(index, 1); salvarPerguntas(); listarPerguntas(); } }
     function resetarPerguntas() { if (confirm('Voltar para as perguntas padrão? Isso apaga tudo que você adicionou.')) { perguntas = [...perguntasPadrao]; salvarPerguntas(); listarPerguntas(); } }
 </script>
